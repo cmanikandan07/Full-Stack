@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-20 Stopwatch</title>
+    <style>
+        #stopwatch {
+            display: none;
+            font-size: 2em;
+        }
+
+        #message {
+            font-size: 1.5em;
+        }
+
+        button {
+            font-size: 1.2em;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="message">Stopwatch will appear in 2 seconds...</div>
+
+    <div id="stopwatch">
+        <span id="time">00:00.00</span>
+        <br>
+        <button onclick="startTimer()">START</button>
+        <button onclick="stopTimer()">STOP</button>
+        <button onclick="resetTimer()">RESET</button>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

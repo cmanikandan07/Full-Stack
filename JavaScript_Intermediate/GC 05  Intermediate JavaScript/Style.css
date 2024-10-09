@@ -1,0 +1,30 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333; /* Dark gray text for headings */
+    border-bottom: 2px solid #007BFF; /* Blue underline */
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+}
+
+li {
+    background-color: #007BFF; /* Blue background for list items */
+    color: white; /* White text for list items */
+    margin: 5px 0; /* Space between list items */
+    padding: 10px; /* Padding inside list items */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+    li:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }

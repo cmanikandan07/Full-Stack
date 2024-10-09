@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-21 Vehicle Class</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #speed {
+            font-size: 2em;
+            color: red;
+        }
+
+        button {
+            font-size: 1.2em;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="vehicle-name"></h2>
+    <p>Speed: <span id="speed">0.0</span> km/h</p>
+    <button onclick="vehicle.start()">START</button>
+    <button onmousedown="vehicle.accelerate()" onmouseup="vehicle.stopAccelerating()">ACCELERATE</button>
+    <button onmousedown="vehicle.brake()" onmouseup="vehicle.stopBraking()">BRAKE</button>
+    <button onclick="vehicle.stop()">STOP</button>
+
+    <script src="script2.js"></script>
+</body>
+</html>
