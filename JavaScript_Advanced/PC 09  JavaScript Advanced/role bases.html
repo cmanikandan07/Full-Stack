@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Based Access</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1 id="access-result">ACCESS RESULT</h1>
+
+    <div>
+        <label for="role">Role: </label>
+        <input type="text" id="role" placeholder="Enter role (teacher/student)">
+    </div>
+    <div>
+        <label for="file">File: </label>
+        <input type="text" id="file" placeholder="Enter file (attendance/class-work/home-work)">
+    </div>
+    <button onclick="checkAccess()">Check Access</button> <!-- Button to check access -->
+
+    <script src="script.js"></script>
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+</html>

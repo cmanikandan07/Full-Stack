@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-22 Fetch Joke</title>
+    <style>
+        /* Style for the body to center the content vertically and horizontally */
+        body {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Full height of the viewport */
+            flex-direction: column; /* Stack children vertically */
+            background-color: #f0f0f0; /* Light gray background */
+        }
+        /* Style for the button */
+        button {
+            padding: 10px 20px; /* Padding around the button text */
+            font-size: 16px; /* Font size for the button text */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        /* Style for the joke display area */
+        #joke {
+            margin-top: 20px; /* Space between button and joke text */
+            font-size: 18px; /* Font size for the joke text */
+            text-align: center; /* Center align the joke text */
+        }
+    </style>
+</head>
+<body>
+    <!-- Button to fetch a new joke -->
+    <button id="jokeButton">Get a Joke</button>
+    <!-- Div to display the fetched joke -->
+    <div id="joke"></div>
+    <!-- Include the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

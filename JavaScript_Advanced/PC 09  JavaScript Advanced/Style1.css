@@ -1,0 +1,22 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#categories {
+    margin-bottom: 20px;
+}
+
+.category {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#total-price {
+    margin-top: 20px;
+    font-weight: bold;
+}
