@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Buttons with Common Dropdown and Dropup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"> <!-- Add Bootstrap Icons -->
+    <style>
+        .button-container {
+            margin: 20px; /* Add some margin around the button container */
+            flex: 1; /* Allow the button container to grow */
+        }
+
+        .btn {
+            margin-right: 10px; /* Space between buttons */
+        }
+
+        /* Custom style for secondary button */
+        .btn-secondary-custom {
+            background-color: white; /* White background */
+            color: #6c757d; /* Text color matches secondary */
+            border: 2px solid #6c757d; /* Border color matches secondary */
+        }
+
+            .btn-secondary-custom:hover {
+                background-color: #6c757d; /* Change background on hover */
+                color: white; /* Change text color on hover */
+            }
+
+        /* Custom style for success button */
+        .btn-success-custom {
+            background-color: white; /* White background */
+            color: #198754; /* Text color matches success */
+            border: 2px solid #198754; /* Border color matches success */
+        }
+
+            .btn-success-custom:hover {
+                background-color: #198754; /* Change background on hover */
+                color: white; /* Change text color on hover */
+            }
+
+        /* Custom style for danger button */
+        .btn-danger-custom {
+            background-color: white; /* White background */
+            color: #dc3545; /* Text color matches danger */
+            border: 2px solid #dc3545; /* Border color matches danger */
+        }
+
+            .btn-danger-custom:hover {
+                background-color: #dc3545; /* Change background on hover */
+                color: white; /* Change text color on hover */
+            }
+
+        /* Custom style for warning button */
+        .btn-warning-custom {
+            background-color: white; /* White background */
+            color: #ffc107; /* Text color matches warning */
+            border: 2px solid #ffc107; /* Border color matches warning */
+        }
+
+            .btn-warning-custom:hover {
+                background-color: #ffc107; /* Change background on hover */
+                color: white; /* Change text color on hover */
+            }
+
+        /* Custom style for info button */
+        .btn-info-custom {
+            background-color: white; /* White background */
+            color: #0dcaf0; /* Text color matches info */
+            border: 2px solid #0dcaf0; /* Border color matches info */
+        }
+
+            .btn-info-custom:hover {
+                background-color: #0dcaf0; /* Change background on hover */
+                color: white; /* Change text color on hover */
+            }
+
+        /* Flexbox container to push navigation to the bottom */
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* Full viewport height */
+        }
+
+        footer {
+            margin-top: auto; /* Pushes the footer to the bottom */
+        }
+    </style>
+</head>
+<body>
+    <div class="container button-container">
+        <div class="d-flex justify-content-center">
+            <!-- Center align the buttons -->
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn-secondary-custom btn">Secondary</button>
+            <button class="btn-success-custom btn">Success</button>
+            <button class="btn-danger-custom btn">Danger</button>
+            <button class="btn-warning-custom btn">Warning</button>
+            <button class="btn-info-custom btn">Info</button>
+        </div>
+
+        <!-- Common Dropdown and Dropup Buttons -->
+        <div class="d-flex justify-content-center mt-4">
+            <!-- Center align the dropdowns -->
+            <div class="dropdown me-2">
+                <!-- Dropdown Button -->
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Action 1</a></li>
+                    <li><a class="dropdown-item" href="#">Action 2</a></li>
+                    <li><a class="dropdown-item" href="#">Action 3</a></li>
+                </ul>
+            </div>
+
+            <div class="dropup">
+                <!-- Dropup Button -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropupMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropup
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropupMenuButton" style="bottom: 100%; margin-bottom: 5px;">
+                        <li><a class="dropdown-item" href="#">Action 1</a></li>
+                        <li><a class="dropdown-item" href="#">Action 2</a></li>
+                        <li><a class="dropdown-item" href="#">Action 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Center Aligned Pagination in Footer -->
+    <footer>
+        <nav aria-label="Page navigation" class="mt-4">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                <li class="page-item"><a class="page-link" href="#">8</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

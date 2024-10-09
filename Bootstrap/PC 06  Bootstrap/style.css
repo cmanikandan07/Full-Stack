@@ -1,0 +1,56 @@
+﻿
+
+body {
+    background-color: #f8f9fa; /* Light grey background */
+}
+
+h1 {
+    color: #007bff; /* Bootstrap primary color */
+}
+
+
+
+
+/* Center align the card titles */
+.card-title {
+    text-align: center;
+}
+
+/* card css*/
+.card {
+    transition: transform 0.2s; /* Animation for hover effect */
+}
+
+    .card:hover {
+        transform: scale(1.05); /* Slightly enlarge the card on hover */
+    }
+
+.card-img-top {
+    width: 200px; /* Set the width to 250 pixels */
+    height: 200px; /* Set the height to 250 pixels */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+/*basic layou css*/
+.profile-link {
+    color: white !important;
+    background-color: blue !important;
+    border-radius: 5px;
+    position: relative; /* For positioning the circle */
+    padding-right: 30px; /* Add extra space for the circle */
+}
+
+.notification-circle {
+    width: 18px; /* Increased size of the circle */
+    height: 20px; /* Increased size of the circle */
+    background-color: red; /* Circle color */
+    border-radius: 50%; /* Make it circular */
+    position: absolute; /* Position it relative to the profile link */
+    top: -2px; /* Adjust this value to position it correctly */
+    right: 5px; /* Adjust this value to position it correctly */
+    border: 2px solid white; /* Optional: add a border */
+}
+
+.centered-image {
+    width: 400px; /* Size of the image */
+}
