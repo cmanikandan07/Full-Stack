@@ -1,0 +1,92 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background color */
+}
+
+.dashboard {
+    max-width: 1200px; /* Limit the width of the dashboard */
+    margin: 0 auto; /* Center the dashboard */
+    padding: 20px; /* Padding around the dashboard */
+}
+
+h1 {
+    text-align: center; /* Center the title */
+    color: #333; /* Title color */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.stats-container {
+    display: grid; /* Use CSS grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between grid items */
+}
+
+.stat-card {
+    background-color: white; /* Card background color */
+    border: 1px solid #ddd; /* Card border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+}
+
+.stat-logo {
+    height: 70px; /* Increased logo height */
+    margin-left: 10px; /* Space to the left of the logo */
+    opacity: 0.5; /* Set image transparency to 50% */
+}
+
+.stat-info {
+    text-align: left; /* Left align the text */
+}
+
+.stat-card h2 {
+    margin: 0 0 10px; /* Space below title */
+}
+
+/* Specific colors for each h2 */
+.workshops-title {
+    color: #ff5733; /* Red for workshops */
+}
+
+.batches-title {
+    color: #33c1ff; /* Light Blue for batches */
+}
+
+.students-title {
+    color: #85e085; /* Green for students */
+}
+
+.certifications-title {
+    color: #ffcc33; /* Yellow for certifications */
+}
+
+.stat-value {
+    font-size: 2em; /* Large font size for the value */
+    color: #333; /* Value color */
+    margin: 5px 0; /* Space around value */
+}
+
+.stat-description {
+    font-size: 0.9em; /* Smaller font size */
+}
+
+/* Specific colors for each description */
+.workshops {
+    color: #ff5733; /* Red for workshops */
+}
+
+.batches {
+    color: #33c1ff; /* Light Blue for batches */
+}
+
+.students {
+    color: #85e085; /* Green for students */
+}
+
+.certifications {
+    color: #ffcc33; /* Yellow for certifications */
+}

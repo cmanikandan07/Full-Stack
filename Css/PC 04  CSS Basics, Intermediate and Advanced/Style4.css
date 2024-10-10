@@ -1,0 +1,36 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.image-container {
+    position: relative; /* Allow positioning of images */
+    display: inline-block; /* Center the images */
+}
+
+.original-image {
+    width: 300px; /* Set the width of the original image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.mirrored-image {
+    width: 300px; /* Set the width of the mirrored image */
+    height: auto; /* Maintain aspect ratio */
+    transform: scaleX(-1); /* Flip the image horizontally */
+    position: absolute; /* Overlap the original image */
+    top: 0; /* Align top edges */
+    left: 0; /* Align left edges */
+}

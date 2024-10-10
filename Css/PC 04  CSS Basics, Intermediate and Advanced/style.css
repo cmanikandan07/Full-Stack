@@ -1,0 +1,46 @@
+﻿* {
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.container {
+    display: flex; /* Create a flex container */
+    width: 80%; /* Container width */
+    height: 300px; /* Fixed height for the container */
+    border: 2px solid #388E3C; /* Darker green border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.left-section {
+    flex: 0 0 25%; /* Fixed 25% width for left section */
+    display: flex; /* Create a flex container */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    background-color: #4CAF50; /* Green background */
+}
+
+
+
+.right-section {
+    flex: 0 0 75%; /* Fixed 75% width for right section */
+    display: flex; /* Create a flex container */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    background-color: #ffffff; /* White background for right section */
+}
+
+.vertical-text {
+    writing-mode: vertical-rl; /* Vertical text direction */
+    text-align: center; /* Center text within the div */
+    font-size: 24px; /* Increase font size for visibility */
+    color: #333; /* Dark text color */
+    padding: 20px; /* Padding around the text */
+}

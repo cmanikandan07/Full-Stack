@@ -1,0 +1,29 @@
+﻿body {
+    margin: 0; /* Remove default body margin */
+}
+
+.navbar-container {
+    background-color: blue; /* Set background color to blue */
+    padding: 10px; /* Add padding around the navbar */
+}
+
+.navbar {
+    background-color: blue; /* Ensure the navbar background is blue */
+}
+
+.navbar-brand img {
+    height: 50px; /* Adjust logo height */
+}
+
+.navbar-nav .nav-link {
+    color: white !important; /* Set navbar link color to white */
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #add8e6 !important; /* Light blue color on hover */
+    }
+
+/* Make sure the logo color is white */
+.navbar-brand {
+    color: white !important; /* Set the logo color to white */
+}

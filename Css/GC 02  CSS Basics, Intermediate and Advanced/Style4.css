@@ -1,0 +1,63 @@
+﻿/* General body styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background color */
+}
+
+/* Container for the entire product section */
+.product-page {
+    display: grid; /* Use CSS grid layout for a better grid structure */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 0; /* Remove gap between the sections */
+    margin: 0; /* Remove any margin around the container */
+    padding: 0; /* Remove any padding around the container */
+}
+
+/* Each product section */
+.product-section {
+    background-color: lightgreen;
+    padding: 20px;
+    border: 0; /* Remove border */
+    border-radius: 0; /* No rounded corners */
+    margin: 0; /* Remove any margin around each section */
+    width: 100%; /* Take up full width of the column */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    text-align: center;
+}
+
+/* Styling for the product images */
+.product-image {
+    width: 20%; /* Make the image smaller */
+    height: auto;
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Make sure the image is centered */
+}
+
+/* Product title styles */
+.product-section h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 0 0 10px; /* Space only below the title */
+}
+
+/* Description text */
+.product-section p {
+    color: #666;
+    font-size: 1em;
+    margin: 0; /* Remove any margin around the text */
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 800px) {
+    .product-page {
+        grid-template-columns: repeat(2, 1fr); /* Change to two columns for smaller screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .product-page {
+        grid-template-columns: 1fr; /* One column per row on mobile */
+    }
+}

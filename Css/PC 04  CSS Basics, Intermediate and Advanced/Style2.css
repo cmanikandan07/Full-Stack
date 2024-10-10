@@ -1,0 +1,70 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.progress-container {
+    text-align: left;
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.progress-label-left {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Text color */
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0; /* Light gray background for progress bar */
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    height: 30px; /* Height of the progress bar */
+}
+
+.progress {
+    background-color: #3498db; /* Main progress color */
+    height: 100%;
+    border-radius: 25px 0 0 25px;
+    position: relative;
+    width: 0; /* Set initial width to 0% */
+}
+
+.progress-label {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white; /* Text color inside the progress bar */
+    font-weight: bold;
+    font-size: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
