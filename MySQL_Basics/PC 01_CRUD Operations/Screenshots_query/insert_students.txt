@@ -1,0 +1,19 @@
+CREATE TABLE NeuStudents (
+    Stud_ID INT NOT NULL PRIMARY KEY,
+    Date DATE NOT NULL,
+    First_name CHAR(20) NOT NULL,
+    Last_name CHAR(20) NOT NULL,
+    Course CHAR(20) NOT NULL,
+    Price FLOAT NOT NULL,
+    Has_opted_for_mentor BOOLEAN NOT NULL,
+    Has_started_the_course BINARY
+);
+
+INSERT INTO NeuStudents (Stud_ID, Date, First_name, Last_name,
+Course, Price, has_opted_for_mentor, has_started_the_course) 
+VALUES 
+(1, '2021-01-01', 'Sagar', 'Roy', 'Full Stack', 3200.50, FALSE, B'1'),
+(2, '2022-10-01', 'Emon', 'Ray', 'Front-end', 1400.51, TRUE, B'0');
+
+Select * from NeuStudents;
+

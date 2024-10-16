@@ -1,0 +1,21 @@
+CREATE TABLE customers (
+    id INT,
+    name VARCHAR(255),
+    first_name VARCHAR(255),
+    last_name VARCHAR(255),
+    email VARCHAR(255),
+    phone_number VARCHAR(20),
+    phone_verified BOOLEAN,
+    email_verified BOOLEAN
+);
+
+INSERT INTO customers (id, name, first_name, last_name, email, phone_number, phone_verified, email_verified) VALUES 
+(1, 'Manikandan c', 'Manikandan', 'C', 'manikandan.c@example.com', '1234567890', TRUE, TRUE),
+(2, 'Virat Kholi', 'Virat', 'Kholi', 'virat.kholi@testmail.com', '0987654321', FALSE, TRUE),
+(3, 'Sachine Tendulkar', 'Sachini', 'Tendulkar', 'sachine.Tendulkar@example.org', '1230984567', TRUE, FALSE),
+(4, 'Dhoni MS', 'Dhoni', 'MS', 'Dhoni.ms@company.net', '3216549870', TRUE, TRUE);
+
+SELECT * 
+FROM customers
+WHERE email LIKE '%@%' 
+AND email LIKE '%.com';

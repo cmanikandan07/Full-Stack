@@ -1,0 +1,27 @@
+CREATE TABLE orders (
+    id VARCHAR(20) PRIMARY KEY,
+    restaurant_id INT,
+    customer_id INT,
+    order_date DATE,
+    deliver_date DATE
+);
+
+CREATE TABLE order_items (
+    order_id VARCHAR(20),
+    item_name VARCHAR(255),
+    FOREIGN KEY (order_id) REFERENCES orders(id)
+);
+
+
+INSERT INTO orders (id, restaurant_id, customer_id, order_date, deliver_date)
+VALUES ('0_001', 2001, 1001, '2022-01-01', '2022-01-02');
+
+
+INSERT INTO order_items (order_id, item_name)
+VALUES 
+('0_001', 'lemon peel'),
+('0_001', 'potato chips');
+
+
+Select * from orders;
+select * from order_items ;

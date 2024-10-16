@@ -1,0 +1,17 @@
+CREATE TABLE dept_emp (
+    employee_number INT PRIMARY KEY,
+    department_number VARCHAR(10)
+);
+
+INSERT INTO dept_emp (employee_number, department_number) VALUES
+(1, 'd001'),
+(2, 'd002'),
+(3, 'd005'),
+(4, 'd005'),
+(5, 'd003'),
+(6, 'd004'),
+(7, 'd005');
+
+SELECT employee_number 
+FROM dept_emp 
+WHERE department_number = 'd005';

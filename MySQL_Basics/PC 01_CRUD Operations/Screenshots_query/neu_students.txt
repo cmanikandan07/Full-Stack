@@ -1,0 +1,13 @@
+CREATE TABLE NeuStudents (
+    Stud_ID INT NOT NULL PRIMARY KEY,
+    Date DATE NOT NULL,
+    First_name CHAR(20) NOT NULL,
+    Last_name CHAR(20) NOT NULL,
+    Course CHAR(20) NOT NULL,
+    Price FLOAT NOT NULL,
+    Has_opted_for_mentor BOOLEAN NOT NULL,
+    Has_started_the_course BINARY
+);
+
+-- Verify the table structure
+DESCRIBE NeuStudents;

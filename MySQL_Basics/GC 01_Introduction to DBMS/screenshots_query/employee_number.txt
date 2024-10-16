@@ -1,0 +1,23 @@
+CREATE TABLE employees (
+    emp_no INT PRIMARY KEY,
+    emp_title_id VARCHAR(10),
+    birth_date DATE,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    sex CHAR(1),
+    hire_date DATE
+);
+INSERT INTO employees (emp_no, emp_title_id, birth_date, first_name, last_name, sex, hire_date) VALUES
+(1001, 'e0002', '1990-01-15', 'Amit', 'Kelley', 'M', '2015-03-10'),
+(1002, 'e0003', '1985-05-12', 'Sara', 'Connor', 'F', '2016-06-11'),
+(1003, 'm0001', '1982-02-20', 'MAni', 'Doe', 'M', '2010-09-15'),
+(1004, 'e0005', '1992-09-30', 'Preetha', 'Blunt', 'F', '2017-12-01'),
+(1005, 'e0006', '1991-04-18', 'Anna', 'Smith', 'F', '2018-07-22'),
+(1006, 'm0001', '1988-03-10', 'Zara', 'Doe', 'F', '2011-05-17'),
+(1007, 'e0007', '1994-07-25', 'Emmie', 'Jones', 'F', '2019-09-23');
+
+
+SELECT emp_no, hire_date
+FROM employees
+WHERE sex = 'F' 
+AND emp_title_id <> 'm0001';

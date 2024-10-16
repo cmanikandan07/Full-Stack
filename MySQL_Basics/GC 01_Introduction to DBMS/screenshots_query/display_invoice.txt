@@ -1,0 +1,23 @@
+CREATE TABLE invoice_details (
+    doc_id INT,
+    cust_number VARCHAR(255),
+    clear_date DATE,
+    business_year INT,
+    invoice_amount FLOAT,
+    cust_payment_terms VARCHAR(50),
+    isOpen BOOLEAN,
+    due_date DATE,
+    address VARCHAR(255)
+);
+
+INSERT INTO invoice_details (doc_id, cust_number, clear_date, business_year, invoice_amount,
+cust_payment_terms, isOpen, due_date, address) 
+VALUES
+(101, 'MC001', '2024-05-12', 2024, 5000.50, 'NET30', 1, '2024-06-15', 'Chrompet'),
+(102, 'MC002', '2024-06-14', 2024, 7500.00, 'NET45', 0, '2024-07-20', 'Tambaram'),
+(103, 'MC003', '2024-07-22', 2024, 3000.00, 'NET60', 1, '2024-08-25', 'Ramapuram');
+
+
+SELECT * 
+FROM invoice_details 
+WHERE isOpen = 1;

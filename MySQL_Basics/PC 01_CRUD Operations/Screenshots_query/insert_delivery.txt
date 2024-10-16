@@ -1,0 +1,16 @@
+
+
+CREATE TABLE DELIVERY (
+    staff_id INTEGER PRIMARY KEY,
+    staff_name VARCHAR(255),
+    address VARCHAR(255),
+    phone_number VARCHAR(20),
+    status BOOLEAN
+);
+
+INSERT INTO DELIVERY (staff_id, staff_name, address, phone_number, status) 
+VALUES (1345, 'James Arthur', 'J04 Wembley Street', '678547893', FALSE);
+
+
+SELECT * FROM DELIVERY;
+

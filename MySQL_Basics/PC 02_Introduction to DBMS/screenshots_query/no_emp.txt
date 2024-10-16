@@ -1,0 +1,18 @@
+CREATE TABLE dept_emp (
+    dept_no VARCHAR(10),
+    no_emp INT
+);
+
+INSERT INTO dept_emp (dept_no, no_emp) VALUES 
+('d001', 1001),
+('d001', 1002),
+('d001', 1003),
+('d002', 1004),
+('d002', 1005),
+('d003', 1006),
+('d003', 1007),
+('d004', 1008);
+
+SELECT dept_no, COUNT(no_emp) AS num_emp
+FROM dept_emp
+GROUP BY dept_no;

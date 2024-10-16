@@ -1,0 +1,22 @@
+CREATE TABLE restaurants (
+    id INT,
+    name VARCHAR(255),
+    address VARCHAR(255)
+);
+
+INSERT INTO restaurants (id, name, address) VALUES 
+(1, 'A2B', 'Chrompet'),
+(1, 'A2B', 'Chrompet'),
+(1, 'A2B', 'Chrompet'),
+(2, 'Dominos', 'Ramapuram'),
+(2, 'Dominos', 'Ramapuram'),
+(3, 'KFC', 'Tambaram'),
+(3, 'KFC', 'Tambaram'),
+(3, 'KFC', 'Tambaram'),
+(3, 'KFC', 'Tambaram');
+
+
+SELECT id AS restaurant_id, COUNT(id) AS no_of_items
+FROM restaurants
+GROUP BY id
+ORDER BY no_of_items ASC;
